@@ -1,0 +1,70 @@
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Wallpoet');
+
+$body-back: #7A9DBA;
+$back-container: #C6C8C9;
+$lines-icons: #5A748A;
+$text: #F5FAF7;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $body-back;
+  font-weight: bold;
+  text-align: center;
+}
+
+#main-container {
+  color: $text;
+  width: 600px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: $back-container;
+  #title{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: $lines-icons;
+  }
+  #break-container, #session-container {
+    width: 50%;
+    height: 120px;
+    float: left;
+    #break-length, #session-length{
+      width: 65px;
+    }
+  }
+  #message-container {
+    clear: both;
+    width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 5px $lines-icons solid;
+    #timer-label {
+      font-family: 'Wallpoet', cursive;
+      font-size: 50px;
+    }
+    #time-left {
+      font-size: 55px;
+      font-family: 'Orbitron', sans-serif;
+    }
+  }
+  i {
+    display: inline-block;
+    font-size: 30px;
+    user-select: none;
+    color: $lines-icons;
+  }
+  #start_stop, #reset{
+    margin-top: 10px;
+    background: none;
+    font-size: 50px;
+    i {
+      font-size: 50px;
+    }
+  }
+}
